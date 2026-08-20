@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Harish R
+* **Register Number**: 212224230085
+* **Date of Submission**: 20-08-2026
 
 ---
 
@@ -78,33 +78,39 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1.Created a new Amazon EBS volume and configured it with 1 GiB storage in the same Availability Zone as the EC2 instance.
 
----
+2.Attached the EBS volume to the EC2 instance and connected to the instance using Session Manager.
+
+3.Created an ext3 file system, mounted the volume, and created a file to verify that storage was working.
+
+4.Created an EBS snapshot, deleted the original file, and verified that it was removed.
+
+5.Restored the snapshot as a new EBS volume, attached and mounted it, and verified that the deleted file was recovered.
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EBS Volume Created
 
-(Insert Screenshot Here)
+<img width="1917" height="1060" alt="image" src="https://github.com/user-attachments/assets/9c00261d-74cc-483b-bc88-036e30d0658b" />
+
 
 ---
 
 ### Screenshot 2: EBS Volume Attached to EC2
 
-(Insert Screenshot Here)
+<img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/c111d7c9-24c5-41c0-a100-fcfde30f3039" />
+
+<img width="1919" height="1046" alt="image" src="https://github.com/user-attachments/assets/aec5bf3f-4a25-4916-b3ee-d76972762fe0" />
 
 ---
 
 ### Screenshot 3: Mounted Volume with Data
 
-(Insert Screenshot Here)
+<img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/424ef2c0-f98b-4ddc-8e6d-eeb972519c93" />
+
+
 
 ---
 
