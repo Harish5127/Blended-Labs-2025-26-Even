@@ -2,7 +2,7 @@
 
 ## Author
 
-* **Name**: POOJA PRIYA B
+* **Name**: HARISH R
 * **Register Number**: 212224230085
 * **Date of Submission**: 21/03/2026
 
