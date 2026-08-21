@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: Harish R
+* **Name**: POOJA PRIYA B
 * **Register Number**: 212224230085
-* **Date of Submission**: 21.03.2026
+* **Date of Submission**: 21/03/2026
 
 ---
 
@@ -96,77 +96,33 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ## Workflow (Student Explanation)
 
-First, I logged in to the AWS Management Console using my AWS account.
+1. The EC2 Dashboard was accessed through the AWS Management Console to explore the Amazon EBS volume types.
+2. A new EBS volume was created by selecting the volume type, size, and the same Availability Zone as the EC2 instance.
+3. The created EBS volume was attached to the running EC2 instance as an additional block device.
+4. The attached volume was formatted using the ext4 file system and mounted to a directory in the EC2 instance.
+5. Sample data was stored in the mounted volume, and after rebooting the instance, data persistence was verified successfully.
 
-I searched for EC2 in the services section and opened the EC2 Dashboard.
-
-I explored different sections like Instances, AMIs, Instance Types, Key Pairs, Security Groups, and Elastic IPs to understand their functions.
-
-I clicked on the “Launch Instance” button to create a new EC2 instance.
-
-I selected Amazon Linux 2 AMI as the operating system.
-
-I chose the t2.micro instance type because it is eligible for the AWS Free Tier.
-
-I entered a name for my instance to identify it easily.
-
-I created a new key pair, selected the PEM format, and downloaded it to my system.
-
-I configured the security group settings.
-
-I allowed SSH access on Port 22 only from my IP address.
-
-I allowed HTTP access on Port 80 from anywhere (0.0.0.0/0).
-
-I reviewed all the configurations and clicked on “Launch Instance.”
-
-After launching, I waited until the instance state changed to “Running.”
-
-I copied the public IP address of the instance from the EC2 dashboard.
-
-I opened the terminal and navigated to the folder where the key pair file was saved.
-
-I connected to the instance using the SSH command:
-ssh -i "keyname.pem" ec2-user@<Public-IP>
-
-I successfully logged in to the Amazon Linux server.
-
-I went back to the EC2 console and selected the instance.
-
-I clicked on “Stop” and observed the instance state changing to “Stopped.”
-
-I clicked on “Start” and observed the state changing back to “Running.”
-
-I also performed the “Reboot” operation and noticed that the instance restarted.
-
-I opened the “Monitoring” tab to check CPU utilization and network metrics.
-
-I observed the status checks to ensure the instance was running properly.
-
-After completing the experiment, I selected the instance and clicked on “Terminate.”
-
-I confirmed the termination and observed that the instance state changed to “Terminated.”
+---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Dashboard / Instance List
+<img width="1920" height="1200" alt="Screenshot (16)" src="https://github.com/user-attachments/assets/8dd26799-6815-4ef4-a2f0-9d55bc5616f4" />
 
-<img width="1261" height="763" alt="image" src="https://github.com/user-attachments/assets/fb5335b4-40e8-48cc-8e95-aea2e1a8a830" />
 
 
 ---
 
 ### Screenshot 2: SSH Connection to Instance
 
-<img width="1269" height="834" alt="image" src="https://github.com/user-attachments/assets/fb10691d-9f39-478c-8424-11c1c9cd418f" />
-<img width="1258" height="719" alt="image" src="https://github.com/user-attachments/assets/c1a51b4b-40d2-4178-8f70-cb53ccb658fa" />
+<img width="1920" height="1200" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/1ba4796f-c26e-4088-ac80-31795160b9cc" />
+
+
 
 ---
 
 ### Screenshot 3: Instance Monitoring / Status
-
-<img width="1262" height="828" alt="image" src="https://github.com/user-attachments/assets/e405980c-352a-4b2b-b200-69f4a76662eb" />
-
+<img width="1920" height="1200" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/3d8a0809-d4e6-4187-8a12-afbfd62829de" />
 
 ---
 
